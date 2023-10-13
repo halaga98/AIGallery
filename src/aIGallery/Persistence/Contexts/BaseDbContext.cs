@@ -1,7 +1,8 @@
-﻿using Core.Security.Entities;
+using Core.Security.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using System.Reflection;
+using Domain.Entities;
 
 namespace Persistence.Contexts;
 
@@ -14,6 +15,11 @@ public class BaseDbContext : DbContext
     public DbSet<RefreshToken> RefreshTokens { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
+    public DbSet<ArtStyle> ArtStyles { get; set; }
+    public DbSet<Category> Categories { get; set; }
+    public DbSet<Image> Images { get; set; }
+    public DbSet<Like> Likes { get; set; }
+    public DbSet<SaledImage> SaledImages { get; set; }
 
     public BaseDbContext(DbContextOptions dbContextOptions, IConfiguration configuration)
         : base(dbContextOptions)

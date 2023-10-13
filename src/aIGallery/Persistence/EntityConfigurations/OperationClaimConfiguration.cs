@@ -33,6 +33,76 @@ public class OperationClaimConfiguration : IEntityTypeConfiguration<OperationCla
                 new OperationClaim { Id = ++id, Name = GeneralOperationClaims.Admin }
             };
 
+        
+        #region ArtStyles
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "ArtStyles.Admin" });
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "ArtStyles.Read" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "ArtStyles.Write" });
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "ArtStyles.Add" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "ArtStyles.Update" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "ArtStyles.Delete" });
+        
+        #endregion
+        
+        
+        #region Categories
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Categories.Admin" });
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Categories.Read" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Categories.Write" });
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Categories.Add" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Categories.Update" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Categories.Delete" });
+        
+        #endregion
+        
+        
+        #region Images
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Images.Admin" });
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Images.Read" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Images.Write" });
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Images.Add" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Images.Update" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Images.Delete" });
+        
+        #endregion
+        
+        
+        #region Likes
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Likes.Admin" });
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Likes.Read" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Likes.Write" });
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Likes.Add" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Likes.Update" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "Likes.Delete" });
+        
+        #endregion
+        
+        
+        #region SaledImages
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "SaledImages.Admin" });
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "SaledImages.Read" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "SaledImages.Write" });
+        
+        seeds.Add(new OperationClaim { Id = ++id, Name = "SaledImages.Add" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "SaledImages.Update" });
+        seeds.Add(new OperationClaim { Id = ++id, Name = "SaledImages.Delete" });
+        
+        #endregion
+        
         return seeds;
     }
 }
